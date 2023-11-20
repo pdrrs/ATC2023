@@ -49,7 +49,12 @@ def calcSoma(p1,p2):
 
 #Define uma função que recebe um polinomio e o desenha num gráfico
 def desenhar(p):
-    pass # Nao consegui mexer com o matplot
+    x = list(range(0,11))
+    y = []
+    for n in range(0,11):
+        y.append(calcPolinomio(p,n))
+    plt.figure(figsize=(8, 8))  
+    plt.plot[x,y]
 
 def lerFicheiro():
     file = open("polinomios.txt","r")
